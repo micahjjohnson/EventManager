@@ -1,0 +1,8 @@
+1-Administration
+2-Program Manager
+3-Chapter Leader
+4-Employee
+
+mjohnson1 - Administrator
+jallen1 - Program Manager
+zgoodwin1 - Employee

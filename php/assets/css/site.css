@@ -1,0 +1,303 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-top:100px;
+    margin-bottom:70px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/*
+a, a:visited {
+	text-decoration: none;
+	color: green;
+}
+*/
+
+a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+.required {
+	color: red;s
+}
+
+#logo {
+	width: auto;
+	height: auto;
+	max-width: 50vw;
+}
+
+#svg-logo {
+	width: 150px;
+    margin-left: 21px;
+}
+
+.tight-verticalScroll {
+	overflow: auto;
+    height: 120px;
+}
+
+.verticalScroll {
+	overflow: auto;
+    height: 400px;
+}
+
+.smallFont {
+	font-size: 12px;
+}
+
+.sm-delete-btn {
+	padding: 2px 7px 2px 7px;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	background-color: #D83948;
+	border-color: #dc3545;
+}
+
+.editPhotoButton {
+	position: absolute;
+	top: 52%;
+
+	background-color: #CACACA;
+	opacity: .7;
+}
+
+.hiddenRow {
+    padding: 0 !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    margin-top:10px;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #28a745; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+#snackbarFail {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #dc3545; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show, #snackbarFail.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+   However, delay the fade out process for 4.5 seconds */
+   -webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
+   animation: fadein 0.5s, fadeout 0.5s 3.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+.d-block {
+	width: 89%!important;
+	margin: auto;
+	/*height: 432px!important;*/
+}
+
+h6, label, .form-control {
+	font-size: .9rem;
+}
+
+label, .form-control {
+	font-size: .8rem;
+}
+
+.table, .table-responsive {
+	font-size: 0.7rem;
+}
+
+.btn {
+	padding: 2px 8px 4px 8px;
+}
+
+.btn-success {
+	background-color: #499E59;
+}
+
+.btn-danger {
+	background-color: #D83948;
+}
+
+.bg-primary {
+	background-color: #325c9f!important;
+}
+
+.bg-secondary {
+	background-color: #a3c6e3!important;
+}
+
+.dropdown-item {
+	font-size: 13px;
+}
+
+.navbar-nav {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.dropdown-toggle::after {
+	display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+@media (max-width: 1017px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		font-size: 12px;
+	}
+	
+	.dropdown-item {
+		font-size: 10px;
+	}
+}
+
+
+@media (max-width: 981px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		font-size: 11px;
+	}
+	
+	.dropdown-item {
+		font-size: 9px;
+	}
+}
+
+@media (max-width: 922px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		font-size: 10px;
+	}
+	
+	.dropdown-item {
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 892px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		font-size: 9px;
+	}
+	
+	.dropdown-item {
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 862px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		font-size: 8px;
+	}
+	
+	.dropdown-item {
+		font-size: 7px;
+	}
+
+	.dropdown-toggle::after {
+		margin-left: 2px;
+		border-top: 3px dashed;
+		border-right: 3px solid transparent;
+		border-left: 3px solid transparent;
+	}
+}
+
+@media (max-width: 806px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		font-size: 7px;
+	}
+	
+	.dropdown-item {
+		font-size: 6px;
+	}
+
+	.dropdown-toggle::after {
+		margin-left: 1px;
+		border-top: 2px dashed;
+		border-right: 2px solid transparent;
+		border-left: 2px solid transparent;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		padding-right:0;
+		font-size: 11px;
+	}
+	
+	.dropdown-item {
+		font-size: 9px;
+	}
+	
+	.dropdown-toggle::after {
+		margin-left: 3px;
+		border-top: 4px dashed;
+		border-right: 4px solid transparent;
+		border-left: 4px solid transparent;
+	}
+	
+	.table-responsive {
+		display: table;
+	}	
+
+}
